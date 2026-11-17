@@ -1,451 +1,488 @@
-# Branded Prepaid Store in Europe — Research & Launch Plan
+# Nama Beauty — Branded Prepaid Store (Europe)
 
-**For:** Aziz (Belgium) · Dutch / French / English / Arabic  
-**Stack:** Custom Next.js + React store · Stripe prepaid only (no COD)  
-**Budget:** **$500 total** (last-chance capital — every euro must buy learning or sales)  
-**Research date:** November 2026  
-
----
-
-## Executive verdict
-
-**Launch in the Netherlands first**, then Belgium, then France.  
-**Build one brand in the Pet Parent Peace niche.**  
-**Test one hero first: a portable dog paw cleaner** (EU warehouse stock, visual 10-second proof, strong emotion, GPSR-only compliance).  
-
-With $500 you cannot fund cosmetics CPNP, electronics CE/WEEE, or a real supplement launch. Phase 1 = simple consumer goods already inside the EU. Food/tea and supplements belong in Phase 2 after a winner pays for paperwork.
+**Brand (locked):** Nama / Nama Beauty  
+**Domain (locked):** [namabeauty.shop](https://namabeauty.shop)  
+**Stack:** Custom **Next.js + React** (no Shopify)  
+**Payments:** Stripe prepaid only — cards, Apple Pay, Google Pay, **iDEAL** (NL), **Bancontact** (BE). No COD. No subscriptions (for now).  
+**Languages:** Dutch first → French → English only where it helps  
+**Markets:** Belgium + Netherlands first → France → Germany  
+**Owner context:** Based in Belgium; NL / FR / EN / AR  
 
 ---
 
-## 1. Best launch countries for you
+## 0. Executive lock
 
-| Rank | Country | Why it fits you | Ad cost (Meta e‑com CPM) | Payments that unlock prepaid trust | Delivery expectation | Expand-next |
-|------|---------|-----------------|---------------------------|------------------------------------|----------------------|-------------|
-| **1** | **Netherlands** | You speak Dutch; high e‑com maturity; iDEAL is non‑negotiable (~73% of NL online payments) | ~$8.58 | **iDEAL** + cards + Apple/Google Pay | Fast; high first-attempt success; promise **2–4 days** from EU warehouse | Same language → BE (Flanders) |
-| **2** | **Belgium** | Home base; Bancontact expected; you cover NL + FR; Belgians tolerate slightly slower delivery | ~$7.96 | **Bancontact** + cards + Apple/Google Pay | Clear date > raw speed; offer home + pickup | FR (Wallonia creatives already FR) |
-| **3** | **France** | You speak French; large audience; cheaper CPM; 72% more likely to buy when **several delivery options** are shown | ~$6.95 | Cards + Apple Pay + Carte Bancaire; Klarna later | Date clarity + returns ease; options at checkout | Scale creatives, watch fraud |
-| Later | Germany | Huge, but CPM ~$9.05, formal creative, strict consent — needs a bigger test bank than $500 | High | Sofort/Klarna/cards | Speed-obsessed | After NL/BE/FR cashflow |
+Nama Beauty is the **#1 calm-confidence beauty brand** for women in BE/NL who feel their face, hair, and energy no longer match who they are — and who will only pay prepaid when the brand looks like a pharmacy-grade authority, not a dropship shop.
 
-**Do not open with Germany or Spain/Italy** on $500: DE is expensive to learn in; ES/IT need languages you did not list.
+**Three products. Three different problems. One brand system.**
 
-**Language rollout:** NL store first (copy + ads + support). Duplicate to FR within the same Next.js app (locale routes). Keep EN as fallback. Arabic can be a remarketing/WhatsApp support layer for diaspora buyers in BE/NL/FR — not a full storefront until cashflow exists.
+| # | Problem (emotion) | Product | Format |
+|---|-------------------|---------|--------|
+| 1 | Dull / uneven skin, “I look tired and blotchy” (insecurity) | Niacinamide serum | Cosmetic |
+| 2 | Thinning / shedding hair in brush & shower (insecurity, panic) | Biotin hair gummies | Food supplement |
+| 3 | Tiredness & fatigue that shows on the face (frustration, worry) | Magnesium evening complex | Food supplement |
 
-**Sources:** Lebesgue CPM by country 2026; Stripe iDEAL/Bancontact docs; Shopify local-payment experiments (+1.5% NL with iDEAL, +2.9% BE with Bancontact); Ads Bench Europe 2026 (81.6% of stores advertise in one country; BE↔NL is the top language-neighbour pair); Sendcloud delivery research.
+**Pricing (locked logic, tuned to beauty AOV):**
 
----
+| Basket | Price | Why |
+|--------|-------|-----|
+| 1 product | **€49.95** | Above commodity Amazon/bol; below spa panic pricing; beauty median AOV ~€55–€68 |
+| 2 products | **€79.95** | ~€40 each — the “routine starts here” offer |
+| 3 products | **€99.95** | ~€33 each — full Nama ritual; highest contribution |
+| Post-purchase upsell (1 SKU only) | **€24.95** | Only discounted price on the site; real 10–15s timer |
 
-## 2. What’s burned vs what still works in Europe
-
-### Already burned / high-risk on Meta in Europe
-
-These show up as near-identical creatives across many stores, race-to-bottom pricing on Amazon/bol/Temu, and rising CPA:
-
-| Burned product | Why it’s bad for prepaid + brand |
-|----------------|----------------------------------|
-| Posture correctors | Evergreen pain but Meta-saturated; medical-adjacent claim risk |
-| Neck / shoulder massagers | Same video templates everywhere; electronics + battery compliance |
-| LED face masks | Beauty-gadget fatigue; CE/electronics + often medical-ish claims |
-| Ice rollers / jade rollers | Ultra-cheap on Temu; no premium story left |
-| Magnetic lashes / lash serums | Beauty claim + cosmetic rules; ad disapprovals |
-| Teeth whitening kits | Claim + safety issues; high refunds |
-| Hair-growth / eyelash serums | Oversold + cosmetic/health claim landmines |
-| Generic dog **anxiety calming vests** | Documented as **highly saturated** on Meta (identical stock footage + “85% calmer” claims) — ThunderShirt already owns premium at €39–54 |
-| Phone cables / cases / generic fitness bands | Zero brand power; Amazon wins |
-| Fast-fashion basics | 20–30% returns — lethal with prepaid + 14-day EU withdrawal |
-
-### Still works (if branded, EU-stocked, honest demo)
-
-- **Problem-demo products** that show a fix in 15–30 seconds (mess → clean, chaos → calm).
-- **€25–80 impulse AOV** (Meta sweet spot for cold traffic).
-- **Pet-owner emotion** (owners buy for worry/guilt; pet-calm ads are a real Meta spend segment).
-- **Sleep / shared-bedroom friction** (26–33% of adults report sleep problems in NL/BE/FR) — without medical “cures snoring/insomnia” claims.
-- **Embarrassment products** (sweat stains, shoe smell, pet hair on clothes) — high impulse, first-use proof.
-- **New format of an old problem** (tea/ritual instead of a gadget; food instead of a serum) — Phase 2 once compliance is funded.
-
-**Saturation check method (do this before every ad euro):** Meta Ad Library → country = Netherlands → search problem words in Dutch (`modder poten`, `anti schrok bak`, `snurk oordopjes`, etc.) → count distinct shops with ads live **30+ days**. Healthy: 1–5 serious advertisers. Avoid: 15+ clones with the same hook.
+All other cross-sells / upsells on site = **full price**.
 
 ---
 
-## 3. Three big niches × 9 products
+## 1. Brand name check: “Nama” / “Nama Beauty”
 
-Each niche is a **broad audience**. Inside each niche, the three products solve **three different problems** (not accessories of each other), so you can still cross-sell under one brand.
+### Meanings (NL / FR / DE / EN + bonus AR)
 
-**Cost basis used below:** EU warehouse / EU supplier dropship (DE/PL/NL stock — **not China direct**). Landed ≈ product + EU shipping + outbound fee. Stripe ≈ 1.5–2.9% + €0.25 ( Bancontact/iDEAL often cheaper than cards). **Break-even CPA** = contribution after product, ship, fees, and a **10% return/chargeback buffer**. Figures are planning estimates — confirm on your supplier before ads.
+| Language | Finding | Risk |
+|----------|---------|------|
+| **Dutch** | No standard word *nama*. Close word *naam* = “name / reputation” (different spelling & sound). | Low. Soft positive echo (“a name”). |
+| **French** | No common dictionary word. Not a slur. | Low. |
+| **German** | No common negative meaning. | Low. |
+| **English** | Niche slang: mostly “awesome / cool”; rare mild insult use. Not mainstream. | Negligible for a beauty brand. |
+| **Arabic** | **نما (nama)** ≈ “to grow / flourish”. | **Positive** for beauty — keep as quiet brand story for AR-speaking customers. |
+| **Japanese (cultural)** | *nama* ≈ “raw / fresh”. Already used by a JP pet-food brand — different category. | Neutral / slightly premium “pure” vibe. |
+
+**Verdict on meaning:** Safe to use emotionally. No blocking negative meaning in NL/FR/DE/EN.
+
+### Trademark conflict (important — act on this)
+
+Public EUIPO records show **real Class 3 cosmetics conflicts**:
+
+| Mark | EUTM no. | Status | Owner | Classes relevant to you |
+|------|----------|--------|-------|-------------------------|
+| **nama** (figurative) | **019034393** | **Registered** (23 Oct 2024) | Ioannis Asimakopoulos (GR) | **Class 3 cosmetics** + Class 5 (incl. food supplements) + others |
+| **NAMA PERSONAL CARE** (figurative) | **017018953** | **Registered** (2017) | Same owner | **Class 3** + Class 5 |
+
+**What this means for namabeauty.shop**
+
+- Owning the **domain does not clear the trademark**.
+- A registered EUTM in **Class 3** (and Class 5 for supplements) can oppose or cease-and-desist use of “Nama” / “Nama Beauty” for cosmetics & supplements EU-wide.
+- The marks are listed as **figurative** (logo+word), not pure word marks — that can change a lawyer’s risk assessment, but it is **not** clearance.
+
+**Required next step (this week):** EU trademark attorney search (EUIPO + BOIP full similarity search) for *Nama*, *Nama Beauty*, phonetics, and Class 3 + 5 + 35. Options: coexistence / license / register **Nama Beauty** as a distinctive composite + strong logo / contingency rename of the wordmark while keeping the domain redirect.
+
+Until cleared: proceed with build, but **do not print large runs of packaging** and budget for a possible wordmark pivot.
+
+### Taglines (locked candidates)
+
+| | Line |
+|--|------|
+| **NL** | **Nama Beauty — Huid. Haar. Rust. Zonder loze beloftes.** |
+| **FR** | **Nama Beauty — Peau. Cheveux. Calme. Sans promesses vides.** |
+| **EN** | **Nama Beauty — Skin. Hair. Calm. Without empty promises.** |
+
+Short lockup (packaging / favicon text): **Nama**  
+Legal / footer: **Nama Beauty** · namabeauty.shop · BE company + VAT  
+
+Alt short tag (ads):  
+- NL: *Eindelijk weer jezelf in de spiegel.*  
+- FR: *Enfin toi dans le miroir.*  
+- EN: *Yourself again in the mirror.*
 
 ---
 
-### Niche A — Pet Parent Peace *(recommended brand home)*
+## 2. Restart: 3 BIG niches × 3 products (different problems)
 
-**Audience size & pain**
+Criteria: big audience, prepaid-friendly, fast perceived value, low refund/chargeback risk, EU paperwork plannable. Products in a niche are **not** accessories of each other.
 
-- Europe: ~**91M dogs**, ~**111M cats**, **140M** pet households (FEDIAF 2026 / 2024 data).
-- Belgium: ~2.1M dogs, ~3.1M cats; **28%** HH own a dog, **33%** a cat.
-- Netherlands: ~1.7M dogs, ~3.0M cats.
-- France: ~9.7M dogs, ~16.7M cats.
-- Noise sensitivity ~**32%** of dogs; separation-related problems commonly cited **14–20%** in research cohorts; owners feel **guilt, worry, neighbour embarrassment**.
-- EU pet-calming category alone estimated **€850M–€1.1B** retail (IndexBox-style market commentary for 2026).
+### Niche A — Visible Beauty Confidence → **THIS IS NAMA BEAUTY** ✅
 
-**Brand angle:** Not “another AliExpress pet shop.” Position as the calm, design-led Benelux brand that keeps home and dog in balance — premium packaging language, size guides, rainy-day ritual, vet-tone honesty (no miracle claims).
+**Why #1 for you:** Europe cosmetics ~**€110B** (2025). Skin care alone ~€32B. Beauty e-com converts ~**2–4%** (often best of any category). Returns often **5–15%** (opened cosmetics/supplements frequently non-resalable → hygiene policy). Your languages + BE base + premium prepaid trust = fit. Paperwork (CPNP + FOODSUP) is solvable.
 
-#### A1 — Portable silicone paw cleaner *(TEST THIS FIRST)*
+| Product | Different problem | Emotion | Format | Paperwork |
+|---------|-------------------|---------|--------|-----------|
+| **Niacinamide serum** | Dull / uneven tone, visible spots | Insecurity in photos & daylight | Cosmetic | CPNP + EU Responsible Person + PIF/CPSR + GPSR packaging EPR |
+| **Biotin hair gummies** | Hair looking thinner / more in the brush | Panic, aging fear | Food supplement | FOODSUP BE (€295) + FR Compl’Alim + label; NL business reg; Reg. 1924/2006 claims only |
+| **Magnesium evening complex** | Tiredness & fatigue (face looks drained) | Frustration, “I can’t show up” | Food supplement | Same as supplements; authorised claim path on magnesium |
+
+Deep dive = rest of this document.
+
+### Niche B — Pet Parent Peace (backup brand later)
+
+Big: ~91M dogs / 111M cats in Europe; strong owner guilt/worry.
+
+| Product | Problem | Emotion | Paperwork |
+|---------|---------|---------|-----------|
+| Portable paw cleaner | Muddy paws ruin home | Frustration, partner conflict | GPSR + packaging EPR |
+| Slow-feed bowl | Gulping / choke worry | Worry for loved pet | GPSR (+ food-contact if relevant) |
+| Snuffle / enrichment mat | Boredom destruction when alone | Guilt, neighbour stress | GPSR |
+
+### Niche C — Shared Bedroom Rest (backup)
+
+Big: ~26–33% adults report sleep problems (NL/BE/FR).
+
+| Product | Problem | Emotion | Paperwork |
+|---------|---------|---------|-----------|
+| Contour pillow | Morning neck stiffness | Pain | GPSR (textile/foam) |
+| Blackout sleep mask | Light wakes them early | Frustration | GPSR |
+| Soft couple earplugs | Partner noise / snoring *for the listener* | Relationship tension | GPSR; **no** anti-snore medical claims |
+
+---
+
+## 3. Nama Beauty — ICP, positioning, proof system
+
+### ICP (primary)
+
+**Who:** Women **28–55** in NL/BE (then FR), urban/suburban, Dutch- or French-speaking.  
+**Life:** Desk job or busy household. Sees herself in Zoom, school gate, or partner photos and thinks: *“I look more tired / blotchy / thinner-haired than I feel.”*  
+**Buys:** Already tried drugstore serums and random Amazon gummies. Distrusts miracle before/afters. Will pay **€50–€100** if the brand feels like a clean Belgian/Dutch dermocosmetic authority.  
+**Pays prepaid if:** iDEAL/Bancontact visible, EU stock, INCI + lab language, clear 14-day rules, real company details.  
+**Rejects:** Purple Temu energy, fake certificates, “clinically proven to cure”, COD scams, 20-day China shipping.
+
+**Secondary ICP:** Partners/daughters buying “the calm beauty ritual” as a gift (same PDP, gift-note field later).
+
+### Core problem (ICP language)
+
+> NL: *“Ik zie er moe en ongelijk uit, mijn haar wordt dunner in de borstel, en ’s avonds ben ik leeg — terwijl ik mezelf nog herken vanbinnen.”*  
+> FR: *“J’ai le teint fatigué et irrégulier, mes cheveux s’affinent, et le soir je suis à plat — alors que je me reconnais encore à l’intérieur.”*  
+> EN: *“My skin looks tired and uneven, my hair is thinning in the brush, and by evening I’m drained — while I still recognise myself inside.”*
+
+### Positioning (180)
+
+**Category:** Evidence-led beauty ritual (topical + ingestible), not “another serum brand” and not “wellness influencer junk”.  
+**Enemy:** Empty promises, fake reviews, unreadable labels, medical theatre.  
+**Promise:** Three honest tools for three different problems — skin tone, hair maintenance nutrients, evening tiredness — with **only claims the EU allows**, ingredients you can verify, and a store that feels like the category leader in Benelux.  
+**Proof stack (only real assets):**
+
+1. **Ingredient science** — peer-reviewed mechanisms (niacinamide for appearance of uneven tone; biotin/zinc/selenium for *maintenance of normal hair* where dose qualifies; magnesium for *reduction of tiredness and fatigue*).  
+2. **Manufacturer docs** — GMP / ISO 22716 (cosmetics) / ISO 22000 or HACCP (supplements), CoA per batch.  
+3. **Third-party lab** — assay of actives (niacinamide %, biotin mcg, magnesium mg) on your SKU.  
+4. **Dermatologist-tested** (cosmetic serum) — irritation patch protocol; publish method, not fantasy seals.  
+5. **CPNP + RP** publicly acknowledged (“EU Responsible Person: …”).  
+6. **FOODSUP / Compl’Alim** notification numbers on supplement PDPs when issued.  
+7. **Real reviews** — post-purchase email only; no incentives that violate EU unfair-commercial-practice / fake-review rules.  
+8. **Social proof** — order counts, UGC with permission, press later — never fabricated.
+
+### Legal claim rails (non-negotiable)
+
+| Product | Allowed direction | Forbidden |
+|---------|-------------------|-----------|
+| Serum | Cosmetic: “helps reduce the *appearance* of uneven tone / dullness”; INCI; no disease treatment | “Cures melasma”, “removes scars”, drug language |
+| Hair gummies | If source of biotin/zinc/selenium: exact EFSA wording e.g. *“Biotin contributes to the maintenance of normal hair”* | “Stops hair loss”, “regrows hair”, “treats alopecia” |
+| Magnesium | *“Magnesium contributes to a reduction of tiredness and fatigue”* (+ psychological function if formulated to qualify) | “Cures insomnia”, “sleep drug”, ashwagandha disease claims (ashwagandha has **no** EFSA authorised claim — do not build hero claims on it) |
+
+**Ashwagandha note:** Popular in ads, **zero** authorised EU health claims. If you add it later as a flavour/story ingredient, it cannot carry the legal claim. Magnesium (and vitamins) carry the claim backbone.
+
+### Brand voice
+
+Calm, precise, slightly warm Belgian/Dutch directness. Short sentences. Numbers over adjectives. Never shout. Never shame. Always show the mechanism.
+
+---
+
+## 4. The 3 products — names, offers, economics, paperwork
+
+### Naming format
+
+**Product type + key ingredient + problem** (NL primary, FR, EN).
+
+#### P1 — Skin
 
 | | |
 |--|--|
-| **Problem** | Muddy / wet paws destroy floors, rugs, and the peace at home after every walk |
-| **Emotion** | Frustration + partner conflict + embarrassment when guests see paw prints |
-| **Why it works prepaid** | Value visible in **one use** (dirty → clean in ~10 seconds). Demo video = the ad. Matches the promise → lower refunds |
-| **Saturation** | Sold on Amazon/bol (€19–28 generics; branded MudBuster ~€28), but **less Meta-cloned than calming vests**. Room for a premium ritual brand |
-| **Target price** | **€34.90** solo · **€44.90** “Walk Ritual” kit (cleaner + towel + travel pouch) |
-| **Est. landed (EU WH)** | €10–13 (unit ~€6–8 + EU ship ~€4–5 + fees) |
-| **Gross contribution** | ~€20–23 before ads |
-| **Break-even CPA** | **~€18–20** (after 10% return buffer) |
-| **Upsells** | Microfiber towel, spare silicone insert, second size for multi-dog home, slow feeder |
+| **NL** | **Nama Glow Serum — Niacinamide voor doffe, ongelijke huid** |
+| **FR** | **Sérum Nama Glow — Niacinamide pour teint terne et irrégulier** |
+| **EN** | **Nama Glow Serum — Niacinamide for Dull, Uneven Skin** |
+| **Internal SKU** | `NAMA-GLOW-30` |
+| **Problem** | Dullness, uneven tone, “tired blotchy face” in daylight |
+| **Emotion** | Insecurity |
+| **Hero active** | Niacinamide (target **10%** — state assay when lab-confirmed) + supporting HA |
+| **First proof** | Skin *feel* and look of radiance often within days; appearance claims stay modest (2–4 weeks for tone language) |
+| **Price** | €49.95 |
+| **Est. landed EU** | €8–14 (private label EU or EU-warehoused) |
+| **Contribution** | ~€32–38 before ads |
+| **Break-even CPA** | ~€28–32 (after fees + ~8% return buffer) |
+| **Paperwork** | Cosmetic Reg. 1223/2009: **RP**, **PIF**, **CPSR**, **CPNP** before market; label INCI/PAO/batch; packaging EPR; claims substantiation file |
+| **Refund risk** | Medium — set expectation honestly; sealed hygiene policy for opened cosmetics |
 
-#### A2 — Slow-feed / anti-gulp bowl
-
-| | |
-|--|--|
-| **Problem** | Dog inhales food → gagging, vomiting, owner fear of choking/bloat |
-| **Emotion** | Worry for a loved pet (acute, post-meal) |
-| **Why prepaid-safe** | First meal shows slower eating; keep claims to “encourages slower eating,” not veterinary treatment |
-| **Market check** | bol.com branded Fun Feeder ~€17; generics cheaper — brand + design + bundle wins |
-| **Target price** | **€27.90** (or €39.90 with lick mat) |
-| **Est. landed** | €7–10 |
-| **Contribution** | ~€16–19 |
-| **Break-even CPA** | **~€14–16** |
-| **Upsells** | Lick mat, non-slip mat, treat pouch, paw cleaner |
-
-#### A3 — Foraging snuffle / enrichment mat
+#### P2 — Hair
 
 | | |
 |--|--|
-| **Problem** | Boredom → chewing furniture, barking, guilt when owner leaves |
-| **Emotion** | Frustration (destroyed sofa) + worry + neighbour tension |
-| **Why prepaid-safe** | First session is obvious (nose work). Different problem from paws or gulping |
-| **Market check** | bol.com snuffle mats ~€15–23; many unbranded — premium fabric + washability story |
-| **Target price** | **€32.90** |
-| **Est. landed** | €9–12 |
-| **Contribution** | ~€18–21 |
-| **Break-even CPA** | **~€16–18** |
-| **Upsells** | Treats pouch, slow feeder, “alone-time kit” (mat + feeder) |
+| **NL** | **Nama Hair Gummies — Biotine voor het behoud van normaal haar** |
+| **FR** | **Gummies Cheveux Nama — Biotine pour le maintien de cheveux normaux** |
+| **EN** | **Nama Hair Gummies — Biotin for the Maintenance of Normal Hair** |
+| **Internal SKU** | `NAMA-HAIR-60` |
+| **Problem** | Hair looking thinner; more strands in brush/shower |
+| **Emotion** | Insecurity, aging fear |
+| **Hero actives** | Biotin + zinc and/or selenium at **source-of** levels for authorised claims |
+| **First proof** | Habit & “I’m doing something serious” day 1; visible hair story is slower — ads must not promise overnight density |
+| **Price** | €49.95 (60-day jar preferred for perceived value) |
+| **Est. landed** | €7–12 |
+| **Contribution** | ~€34–40 |
+| **Break-even CPA** | ~€30–34 |
+| **Paperwork** | Food supplement: BE **FOODSUP €295**; FR notification; composition vs novel foods; Reg. 1169/2011 + **1924/2006**; no GPSR |
+| **Refund risk** | Lower if claims honest; opened food often excluded from withdrawal if sealed & unsealed (state law carefully on returns page) |
 
-**Avoid as hero:** generic thunder/anxiety vests (burned on Meta; ThunderShirt owns trust).
-
----
-
-### Niche B — Shared Bedroom & Night Rest
-
-**Audience size & pain**
-
-- Netherlands: **26.1%** (age 12+) reported sleep problems in the last 2 weeks (CBS / Staat van VZ, 2024).
-- Belgium: ~**30%** of adults report insomnia symptoms (WOREL / ebpracticenet summary).
-- France: **33.1%** of adults 18–79 report insomnia complaints (Santé publique France 2024).
-- Emotion: pain (neck), frustration (light/partner noise), relationship tension.
-
-**Brand angle:** “Peace for two people who share a bed” — not a medical sleep clinic. No “cures insomnia/apnea” language.
-
-#### B1 — Contoured side-sleeper pillow
+#### P3 — Evening energy / fatigue
 
 | | |
 |--|--|
-| **Problem** | Wakes with stiff neck / shoulders after desk-heavy days |
-| **Emotion** | Physical pain + dread of another bad morning |
-| **First-night proof** | Comfort is immediate — if the ad shows the real shape/feel |
-| **Risk** | **Bulky returns** under EU 14-day withdrawal; ship sealed; size guide mandatory |
-| **Target price** | **€49.90** |
-| **Est. landed** | €18–24 |
-| **Contribution** | ~€22–28 |
-| **Break-even CPA** | **~€18–22** (higher return buffer: use 15%) |
-| **Upsells** | Pillowcase pair, blackout mask, earplugs “bedroom kit” |
+| **NL** | **Nama Evening Magnesium — Magnesium tegen vermoeidheid en moeheid** |
+| **FR** | **Magnésium Nama Evening — Magnésium pour la réduction de la fatigue** |
+| **EN** | **Nama Evening Magnesium — Magnesium for Tiredness & Fatigue** |
+| **Internal SKU** | `NAMA-MG-60` |
+| **Problem** | End-of-day drained feeling that shows on the face and mood |
+| **Emotion** | Frustration, worry about “not coping” |
+| **Hero active** | Magnesium (form: bisglycinate or citrate — pick one stable supplier) at source-of level |
+| **Legal claim** | “Magnesium contributes to a reduction of tiredness and fatigue” |
+| **Not claimed** | Sleep cure / insomnia treatment |
+| **Price** | €49.95 |
+| **Est. landed** | €6–11 |
+| **Contribution** | ~€35–41 |
+| **Break-even CPA** | ~€30–35 |
+| **Paperwork** | Same as P2 (supplement notifications per country) |
+| **Refund risk** | Low if taste/tolerability OK; warn about GI softness with some Mg forms |
 
-#### B2 — Contoured 100% blackout sleep mask
+### Bundle math (site-wide)
 
-| | |
-|--|--|
-| **Problem** | Streetlights / early sunrise / partner’s phone wake them |
-| **Emotion** | Frustration, helplessness |
-| **Why good for $500** | Light, cheap to ship, easy demo (lights on → pitch dark) |
-| **Target price** | **€29.90** |
-| **Est. landed** | €6–9 |
-| **Contribution** | ~€18–21 |
-| **Break-even CPA** | **~€16–18** |
-| **Upsells** | Earplugs, silk/satin strap upgrade, pillow |
+| Cart | Price | Implied / unit | Typical mix |
+|------|-------|----------------|-------------|
+| 1 | €49.95 | €49.95 | Any single |
+| 2 | €79.95 | €39.98 | Glow+Hair, Glow+Mg, Hair+Mg |
+| 3 | €99.95 | €33.32 | Full ritual — default recommended on collection |
 
-#### B3 — Soft reusable couple earplug set
+Show the bundle discount as **cart-level pricing**, not fake strikethroughs. EU unfair-practice rules: reference prices must be real.
 
-| | |
-|--|--|
-| **Problem** | Partner snores / traffic noise — **listener’s** sleep destroyed |
-| **Emotion** | Relationship frustration (critical: you sell **earplugs for the partner**, not a snoring “treatment” device) |
-| **Claim safety** | Do **not** claim to treat sleep apnea or cure snoring |
-| **Target price** | **€19.90** (his + hers case) |
-| **Est. landed** | €4–6 |
-| **Contribution** | ~€12–14 |
-| **Break-even CPA** | **~€11–12** — only works with high CVR or as upsell |
-| **Upsells** | Mask + plugs bundle at €39.90 (better AOV) |
+### Cross-sell logic (different problems → natural pairs)
 
----
+| If they care about… | Lead with | Cross-sell |
+|---------------------|-----------|------------|
+| Mirror / photos | Glow Serum | Evening Mg (“fatigue shows on skin”) |
+| Brush / shower drain | Hair Gummies | Glow Serum (face still in frame) |
+| “I’m empty by 21:00” | Evening Mg | Glow Serum |
 
-### Niche C — Outside-the-Home Confidence
-
-**Audience:** Essentially every working adult who leaves the house — sweat, pet hair, and shoe smell are mass embarrassments (insecurity), not tiny niches.
-
-**Brand angle:** Invisible confidence tools. Clean, clinical photography. Strong fit for Dutch directness and for Arabic-speaking communities where removing shoes indoors makes odor anxiety especially sharp.
-
-#### C1 — Underarm sweat-absorbent pads (multi-pack)
-
-| | |
-|--|--|
-| **Problem** | Sweat rings on shirts in meetings, transit, dates |
-| **Emotion** | Sharp embarrassment / insecurity |
-| **Format note** | Prefer **absorbent pads without antiperspirant actives** to stay out of heavy cosmetic claims; if fragranced/antiperspirant → treat as **cosmetic (Phase 2)** |
-| **Target price** | **€24.90** / 40 pairs |
-| **Est. landed** | €5–8 |
-| **Contribution** | ~€15–18 |
-| **Break-even CPA** | **~€13–15** |
-| **Upsells** | Travel mini-pack, lint brush, deodorant-safe laundry bag |
-
-#### C2 — Premium reusable clothes / pet-hair brush
-
-| | |
-|--|--|
-| **Problem** | Pet hair / lint on black coat when arriving at work or family |
-| **Emotion** | Embarrassment + “I look careless” |
-| **Target price** | **€22.90** |
-| **Est. landed** | €5–7 |
-| **Contribution** | ~€14–16 |
-| **Break-even CPA** | **~€12–14** |
-| **Upsells** | Car seat lint roller, paw cleaner (bridge to Niche A) |
-
-#### C3 — Activated-charcoal shoe deodorizer inserts
-
-| | |
-|--|--|
-| **Problem** | Shoe odor when shoes come off at friends’, mosque, office, gym |
-| **Emotion** | Embarrassment (high impulse) |
-| **First-use** | Smell difference within a day; set expectation honestly (“48 hours”) |
-| **Target price** | **€19.90** / 2 pairs |
-| **Est. landed** | €4–6 |
-| **Contribution** | ~€12–14 |
-| **Break-even CPA** | Best as **upsell**; cold traffic prefers €29+ AOV bundles |
-| **Upsells** | “Leave-home kit”: pads + brush + inserts @ €49.90 |
+Never imply the three are “steps of one treatment” — they are **three separate problems**, one calm brand.
 
 ---
 
-## 4. New formats (tea / food / supplements / packaging) + EU paperwork
+## 5. Website scope (Next.js) — pages & CRO
 
-Use these to **re-solve burned gadget/cosmetic problems** without looking like Temu.
+### Locales
 
-| Format | Example twist | Paperwork | Typical cost | Fits $500 now? |
-|--------|---------------|-----------|--------------|----------------|
-| **Ordinary food** (tea, coffee, powder drink as food) | “Evening wind-down tea” instead of a sleep gadget; “focus cocoa” instead of a nootropic pill aesthetic | Food business operator duties (Reg. 178/2002); hygiene; labelling; **only authorised nutrition/health claims** (Reg. 1924/2006). Not FOODSUP if it’s normal food, not a “supplement dose” | Label lawyer review €200–600; inventory €150+ | **Tight — Phase 1.5** only if ads already work |
-| **Food supplement** | Calm-pet owner magnesium; “beauty from within” instead of serum | Notification **per country**: BE **€295** via FoodSup (€350 email/post); NL **no product notification** but business registration; FR Compl’Alim (no fee listed); novel foods checks | €300–1,000+/SKU + analysis | **No for BE launch SKU** on $500 — **Phase 2** |
-| **Cosmetic** | Premium cream instead of LED mask; perfume-free sweat product | EU **Responsible Person**, PIF, **CPSR**, **CPNP** (portal free; work is not). RP packages often **€300–1,500/SKU** + CPSR | First product often **€2,000–5,000** all-in | **Phase 2** |
-| **General consumer goods** (paw cleaner, pillow, brush, snuffle mat) | Branded version of commodity SKU | **GPSR**: you (BE company) as economic operator; traceability; clear instructions; accident reporting. Packaging **EPR** (BE Fost Plus min ~**€100/yr**) | Low fixed cost if you already have a BE entity | **Yes — Phase 1** |
-| **Electronics / battery** | White noise machine, heated massager, electric paw washer | CE (LVD/EMC/RoHS…), GPSR, **WEEE** + **battery** take-back (BE Recupel / Bebat; NL OPEN etc.) | First product often **€3,000–8,000** | **Phase 2** |
-| **Medical device** | “Anti-snore” mouthpiece, posture “therapy”, LED “acne treatment” | MDR, EUDAMED, authorised rep… | **€10,000+** | **Never on this budget** |
-| **Toys** (if child-targeted) | Kids’ versions of enrichment toys | Toy Directive, EN 71, CE | €1,500–3,000 | **Phase 2** |
+- `/nl/...` default  
+- `/fr/...`  
+- `en` only for shared legal scraps or ads landing if needed — not a full third storefront day one
 
-**Phase 1 rule:** sell **GPSR consumer goods** from EU stock.  
-**Phase 2 (after profit):** tea/food ritual SKUs → then supplements → then cosmetics.  
-**Never:** medical devices, weight-loss, sexual products, disease-treatment claims.
+### Required pages
 
----
+| Page | Job |
+|------|-----|
+| **Home** | Brand hero (Nama), one sentence promise, 3 problem cards → products, proof strip, reviews, ritual CTA |
+| **Collection** | All 3 + bundle explainer (€49.95 / €79.95 / €99.95) |
+| **PDP × 3** | Problem → mechanism → ingredients → claims (legal) → proof → FAQ → cross-sells → sticky ATC |
+| **Cart** | **Drawer only** (no cart page) |
+| **Checkout** | Stripe Payment Element or Stripe Checkout |
+| **Thank-you** | Confirm + timeline + post-purchase upsell window + support |
+| **Contact** | Form + email + BE address + VAT |
+| **Policies** | Terms, Privacy/GDPR, Cookies, Shipping, **14-day withdrawal + EU model withdrawal form**, Legal notice (company, address, VAT, RP contact for cosmetics) |
 
-## 5. Which product to test first with $500
+### Header (always)
 
-### Winner: **Portable dog paw cleaner (Niche A1) — Netherlands**
+- Logo wordmark **Nama** / **Nama Beauty**  
+- Shop · Ritual (collection) · About proof · Contact  
+- Locale switcher NL|FR  
+- Cart icon with count  
+- Trust micro: iDEAL · Bancontact · Apple Pay · Google Pay icons  
 
-| Criterion | Score |
-|-----------|-------|
-| Big audience | Dog owners in rainy Benelux — huge & seasonal |
-| Emotion | Frustration + home embarrassment |
-| Demo | Perfect for Meta/Reels |
-| Prepaid trust | Physical, understandable, non-scammy |
-| Refund risk | Low if quality silicone + honest sizing |
-| Compliance | GPSR + packaging EPR — fits budget |
-| Saturation | Present on marketplaces, **not** as burned as anxiety vests |
-| AOV | €34.90–€44.90 with kit |
-| Your languages | Dutch ads first; you can support customers yourself |
+### Footer (always)
 
-**Do not spend the $500 on:** domain vanity, agency creatives, three niches at once, China shipping tests, CPNP, or Klarna setup.
+- Payment logos  
+- EU warehouse / “Verzending vanuit de EU”  
+- 14-day withdrawal link  
+- Company legal line + VAT  
+- CPNP/RP line (cosmetics)  
+- Cookie settings  
 
----
+### Cookie banner
 
-## 6. Step-by-step $500 test plan
+GDPR-compliant CMP: deny/allow; **Meta Pixel / CAPI only after marketing consent**.
 
-### Budget split (USD)
+### PDP CRO essentials
 
-| Item | Amount | Notes |
-|------|--------|------|
-| Domain + email forwarding | $15 | One brandable .nl or .eu |
-| Next.js host (Vercel/similar) | $0–20 | Free tier OK at start |
-| Stripe | $0 setup | Enable **iDEAL** (NL) + cards + Apple/Google Pay; add Bancontact before BE |
-| 2–3 product samples (S/M/L) | $40 | Film real demos; check quality/smell/packaging |
-| Legal page templates + VAT ID display | $0–25 | Or reuse counsel templates if you have them |
-| **Meta ads** | **$400** | The learning budget |
-| Contingency / refunds | $20–40 | Keep dry powder |
-| **Total** | **≈ $500** | |
+1. Hero: product shot + 8s ingredient/mechanism video.  
+2. Problem headline in ICP language.  
+3. “Wat je wél mag verwachten / Wat we niet beloven”.  
+4. INCI or supplement nutrition table **visible**, not buried.  
+5. Lab / GMP / derm-tested badges **only if documents exist**.  
+6. Sticky ATC: price + bundle hint (“2e product in cart → €79.95 total”).  
+7. Cross-sells at bottom (full price).  
+8. FAQ: shipping days, returns, how claims work, who RP is.
 
-### Days 0–2 — Store that looks like #1, not a dropship template
+### Cart drawer CRO
 
-1. One locale: **nl-NL**. One hero product + kit offer.
-2. Brand name + simple wordmark (no generic Inter/purple SaaS look).
-3. Above the fold: brand, one promise, one demo video/GIF, one CTA.
-4. Trust strip: BE company number, EU warehouse badge (“Verzending vanuit EU-magazijn”), 14-day withdrawal, Track & Trace, payment logos (**iDEAL** first).
-5. Pages required: Privacy (GDPR), Terms, Shipping, Withdrawal/Returns (14 days), Imprint/Contact with **real** address/email/phone.
-6. Shipping promise you can keep: **2–5 working days NL** from named EU warehouse. Show price **before** pay (unexpected shipping = abandonment).
-7. Pixel + Consent Mode / CMP before ads. Server CAPI if you can — not mandatory on day 1.
-
-### Days 3–12 — Ads
-
-- Platform: **Meta Ads** (Instagram Reels + Facebook Feed). TikTok only if you already have organic skill — don’t split $400.
-- Structure: **1 campaign** CBO or ABO · **3 ad sets** (broad 25–55 NL pet interests / dog owners; stacked interest; broad no interest) · **3 creatives** each.
-- Creatives (UGC phone is fine):
-  1. Rainy walk → mud → 10-sec clean → clean floor.
-  2. Partner conflict skit → product as peace offering.
-  3. “Why we built this” brand founder (you on camera builds prepaid trust).
-- Copy: Dutch, specific, no vet-cure claims. Hook on **dirty house / relationship**, not “medical pet anxiety.”
-- Daily spend: **~$35–40/day** for 10 days.
-
-### Kill rules (protect the $400)
-
-| Signal | Action |
-|--------|--------|
-| CTR (link) **&lt; 0.8%** after 1,000 impressions | Kill creative |
-| CPC **&gt; €1.20** with weak CTR | Kill or refresh hook |
-| **$40 spent / ad set**, 0 ATC | Kill ad set |
-| **$60 spent**, ATC but 0 purchase, and LP bounce high | Fix page/trust/payments before more spend |
-| CPA **&gt; 1.5 × break-even** (~€30) after 2–3 purchases worth of spend | Pause; change offer (kit, guarantee framing) |
-| Frequency **&gt; 3** with dying CTR | New creative, don’t raise budget |
-
-### Scale rules
-
-| Signal | Action |
-|--------|--------|
-| ≥ **2 purchases** at CPA ≤ break-even | Move remaining budget to winning ad set |
-| CPA stable 3 days | Duplicate ad set +20–30% budget every 48h (not 2× jumps) |
-| 5+ orders | Order **backup EU stock** confirmation; add Bancontact; soft-launch BE |
-| Refund rate **&gt; 8%** | Stop scale; fix sizing/demo mismatch |
-
-### Success bar for this $500
-
-- **Best case:** 8–15 orders, CPA under break-even, clear winning angle → reinvest revenue.
-- **Acceptable:** 3–5 orders, learn winning hook, even if break-even — you bought a playbook.
-- **Fail fast:** $250 burned, no ATC → niche/offer wrong; switch to **sleep mask (B2)** with remaining ~$200, don’t cling.
+- Line items + live basket price (1/2/3 tier).  
+- One recommended cross-sell at **full price**.  
+- Trust row: payments + 14-day + EU ship.  
+- Primary CTA: **Afrekenen** → checkout.  
+- No surprise shipping: show shipping estimate in drawer.
 
 ---
 
-## 7. What you might not know (raises your odds)
+## 6. Checkout (Stripe) — prepaid CRO
 
-### Trust (prepaid killers)
+### Flow
 
-- iDEAL/Bancontact logos **above** the fold and in checkout — Stripe’s own research: local methods can lift conversion dramatically (iDEAL up to large lifts for NL buyers).
-- EU warehouse + carrier name (PostNL / DHL) on PDP.
-- Real photos of **your** sample, not only supplier packshots.
-- Order confirmation + “handed to carrier” email within 24h — chargebacks love silence.
-- Phone or WhatsApp support in NL/FR (your edge).
+1. Drawer CTA → `/checkout` (App Router).  
+2. Fields only: **email, name, shipping address**; phone optional.  
+3. Order summary sticky (desktop) / top (mobile): items, shipping, total, locale VAT-inclusive.  
+4. Stripe **Payment Element** (preferred for one UI) or **Checkout** Session.  
+5. Enable: `card`, `apple_pay`, `google_pay`, `ideal`, `bancontact`.  
+6. Create/attach **Customer**; set `setup_future_usage=off_session` on the PaymentIntent (needed for post-purchase upsell).  
+7. On `payment_intent.succeeded` webhook:  
+   - Append order row to **Google Sheet** (Order ID, email, SKUs, amounts, address, payment method, upsell flag=false).  
+   - Later: same webhook → supplier API.  
+8. Redirect → `/thank-you?pi=...` (or session_id).
 
-### Legal / compliance traps
+### Checkout CRO
 
-- **14-day withdrawal** for distance sales + **2-year legal guarantee** (Your Europe). Budget returns into CPA.
-- You are responsible for dropship quality and delays — Meta doesn’t ban “dropshipping,” it bans **broken promises**.
-- GPSR: keep supplier invoices, batch info, and instructions in NL/FR.
-- Packaging EPR in BE (Fost Plus) — small but real (~€100 minimum/year territory).
-- VAT: register and use **OSS** when cross-border B2C thresholds require it; show VAT-inclusive prices.
-- Ad claims: no disease treatment, no “clinically proven” without proof, no before/after medical implications for pets or humans.
-
-### Shipping & seasonality
-
-- **Paw cleaner:** peaks in wet months (Benelux autumn/winter) and festival mud season — good timing if you launch into rain.
-- **Sleep:** evergreen; Q4 darker mornings help masks.
-- **Sweat pads:** spring/summer.
-- Never promise China timelines. If EU warehouse is empty, **pause ads** — don’t silently ship from CN.
-
-### Store / brand craft (premium prices on cheap goods)
-
-- One niche, one visual system, one tone of voice.
-- Sell the **ritual and outcome**, not the silicone.
-- Bundle to escape Amazon price anchors (€18 on bol → your €34.90 kit must feel like a different category).
-- Reviews: seed honest ones from friends/family samples **without fake review fraud**.
-
-### Payments roadmap
-
-1. Now: iDEAL + cards + Apple/Google Pay.  
-2. Week 2: Bancontact.  
-3. Phase 2: Klarna (higher AOV sleep kits) once chargeback processes are tight.
-
-### What not to build yet
-
-- Multi-niche mega-menu.
-- Subscriptions.
-- Influencer retainers.
-- Custom box manufacturing (use insert card + sticker first).
+- iDEAL first for NL IP; Bancontact first for BE IP (Stripe dynamic payment methods).  
+- “Je betaalt nu veilig — verzending vanuit EU-magazijn in X–Y werkdagen.”  
+- No account creation wall.  
+- Show return policy one-liner under pay button.  
+- Disable pay until address valid — fewer failed charges / disputes.
 
 ---
 
-## 8. Suggested brand architecture (so all 9 SKUs can live together later)
+## 7. Thank-you page + post-purchase upsell (€24.95)
 
-**Master brand:** Pet-first name (calm, Nordic-Benelux, not “HappyPaws2026”).  
-**Chapter 1 (now):** Home after the walk (paw cleaner → feeder → snuffle).  
-**Chapter 2:** Human sleep (same “peace at home” story).  
-**Chapter 3:** Leave-home confidence (hair, sweat, shoes) — or spin out if brand feels too pet-coded.
+### Thank-you (always)
 
-Cross-sell logic: *peace at home* is the umbrella emotion — pet mess, bad sleep, and social embarrassment all threaten it.
+1. **Order confirmed** — order number, email receipt sent.  
+2. **What happens next** — timeline: paid → packed (EU WH) → Track & Trace email → delivery window.  
+3. **Who to contact** — support@… / contact form (reduces WISMO → chargebacks).  
+4. **Summary** of paid items.  
+5. After upsell window: full-price “also loved” grid (optional).
 
----
+### Post-purchase upsell (only discount on site)
 
-## 9. Risks (be honest)
+- Show **one** offer for **10–15 seconds** with a **real** countdown.  
+- When timer hits 0: offer **server-side expires** (offer token TTL). No fake urgency (EU UCPD).  
+- Price: **€24.95**.  
+- Pick SKU by cart:
 
-| Risk | Mitigation |
-|------|------------|
-| $400 ads buy only clicks, no sales | Kill rules above; fix iDEAL + trust before blaming product |
-| EU returns erase margin | Prefer light SKUs; clear size charts; quality sample gate |
-| Supplier “EU stock” is actually CN | Verify warehouse country on every order; test-buy yourself |
-| You look like every dropship store | Founder video, own photography, local language support |
-| Compliance surprise (cosmetic/electronic creep) | Stay on inert consumer goods until profitable |
-| Emotional burnout | One product, 10-day sprint, written kill rules |
+| Already bought | Offer |
+|----------------|-------|
+| Only Glow | Hair Gummies |
+| Only Hair | Glow Serum |
+| Only Magnesium | Glow Serum |
+| Glow + Hair | Magnesium |
+| Glow + Mg | Hair |
+| Hair + Mg | Glow |
+| All three | **No upsell** (or skip) |
 
----
+### Technical: one-click charge
 
-## 10. Sources (selected)
+**Cards / Apple Pay / Google Pay**
 
-- Lebesgue — Facebook Ads CPM by country (2026 e‑commerce benchmarks).  
-- Transparencyads / Pantheon — Meta CPM estimates EU.  
-- Kreatix — Belgium Meta CPM context.  
-- Stripe — iDEAL / Bancontact docs; global payment-method conversion study.  
-- Shopify — local payment method conversion experiments (NL/BE).  
-- Ads Bench — Dropshipping in Europe 2026 (55k stores); saturation methodology.  
-- AdLibrary.com — Dropshipping Meta playbook 2026 (AOV €25–80, demonstrability).  
-- Dropbuild / Nine Marketer — oversaturated niche lists 2026.  
-- GetMarketRecon — dog anxiety vest saturation note.  
-- Amazon.de / Amazon.be / bol.com — street prices (paw cleaners, ThunderShirt, snuffle mats, slow feeders).  
-- FEDIAF Facts & Figures 2026 — pet population & household ownership.  
-- Zoetis Human–Animal Bond Report 2024 — EU dog/cat estimates.  
-- PMC canine anxiety prevalence study (Finnish cohort) — noise/separation figures.  
-- CBS / Staat van Volksgezondheid en Zorg — NL sleep problems 2024.  
-- Santé publique France — FR insomnia complaints 2024.  
-- ebpracticenet / WOREL summary — BE insomnia symptom rate ~30%.  
-- ImportRules.com — EU category compliance budget table (toys, electronics, cosmetics, supplements, MDR…).  
-- FPS Public Health Belgium — FoodSup fees (€295 / €350).  
-- foodandpharmalaw.com — supplement notification by country (NL none, FR Compl’Alim, etc.).  
-- getCosmeticRP.eu / SellerGuardrails — CPNP/RP pricing bands 2026.  
-- Operator One / EPR Worldwide — BE packaging EPR, Recupel, Bebat.  
-- CJ Dropshipping fee pages — EU warehouse outbound fee structure.  
-- Sendcloud — EU delivery abandonment & optionality (esp. France).  
-- Your Europe / Consilium — 14-day withdrawal, 2-year guarantee.  
-- Meta Commerce & Advertising policies — claim and catalogue restrictions.
+1. First PaymentIntent: `customer` + `setup_future_usage=off_session`.  
+2. Upsell accept → second PaymentIntent `amount=2495`, `currency=eur`, `customer`, `payment_method` from first, `off_session=true`, `confirm=true`.  
+3. If SCA required → bring customer back on-session (rare path UI).  
+4. Webhook merges upsell line into **same order id** in Google Sheet; thank-you summary updates via client fetch.
+
+**iDEAL / Bancontact**
+
+- Both can save IBAN as **SEPA Direct Debit** PaymentMethod when `setup_future_usage` is set on the first payment (Stripe docs).  
+- Prefer: charge upsell via that **SEPA DD** PaymentMethod off-session (mandate text shown at first checkout).  
+- Fallback if SEPA not attached yet: **one-tap redirect** second payment (fastest honest path) — still one product, same order id on success.  
+- Never pretend a method was charged if it was not.
+
+**Decline / timeout:** thank-you + sheet show original order only.
 
 ---
 
-## One-page action checklist
+## 8. Trust, returns, chargebacks (prepaid survival)
 
-1. Pick brand name + NL domain.  
-2. Order paw-cleaner samples from **confirmed EU warehouse**.  
-3. Ship Next.js one-product store with iDEAL + legal pages.  
-4. Film 3 Dutch demos.  
-5. Spend $400 on Meta with written kill rules.  
-6. If CPA works → add slow feeder + snuffle mat under same brand.  
-7. Only then fund tea/supplement/cosmetic Phase 2 paperwork.
+- **Shipping promise you keep:** 2–5 working days NL/BE from EU warehouse; show carrier. Pause ads if stock flips to CN.  
+- **14-day withdrawal:** page + model form; cosmetics/supplements: explain sealed/unsealed hygiene exceptions accurately under national law.  
+- **Match the ad:** same % niacinamide, same jar count, same claims — mismatch = refunds + Meta trust damage.  
+- **WISMO prevention:** thank-you timeline + tracking email within 24h of handoff.  
+- **Chargebacks:** Bancontact/iDEAL are authenticated bank redirects (lower classic card dispute surface); still refund fast when wrong.  
+- **Reviews:** collect after delivery; mark incentivised reviews if any reward — better: no reward.
 
-**Bottom line:** Your languages + Belgium base are a real advantage in NL→BE→FR. Your $500 only works if you refuse burned Meta clones, refuse heavy compliance categories, and put almost everything into one honest, demoable pet-home product with local payments and EU stock.
+---
+
+## 9. Compliance checklist (Nama SKUs)
+
+| Item | Glow Serum | Hair Gummies | Evening Mg |
+|------|------------|--------------|------------|
+| EU Responsible Person + CPNP | ✅ | — | — |
+| PIF + CPSR | ✅ | — | — |
+| FOODSUP BE (€295) | — | ✅ | ✅ |
+| FR supplement notification | — | ✅ when selling FR | ✅ |
+| EFSA claim wording only | cosmetic rules | ✅ biotin/Zn/Se | ✅ magnesium |
+| Batch CoA | ✅ | ✅ | ✅ |
+| Packaging EPR (BE/NL) | ✅ | ✅ | ✅ |
+| GPSR economic operator | cosmetic regime | food law | food law |
+| WEEE/CE | — | — | — |
+
+Trademark attorney clearance for **Nama / Nama Beauty** before scale ads — see §1.
+
+---
+
+## 10. Build order (engineering)
+
+1. Next.js app: locales, design tokens, Nama wordmark.  
+2. Catalog + cart drawer + bundle pricing engine.  
+3. PDPs + policies + CMP.  
+4. Stripe Customer + Payment Element + webhooks → Google Sheet.  
+5. Thank-you + upsell token API (TTL 15s) + second PaymentIntent.  
+6. Meta Pixel/CAPI behind consent.  
+7. Content: NL first, then FR.
+
+---
+
+## 11. Domain suggestions (backup — primary locked)
+
+**Primary (owned):** `namabeauty.shop`
+
+If you ever need a trademark-safe pivot or email/domain aliases:
+
+| Domain idea | Note |
+|-------------|------|
+| `namabeauty.be` | Country trust for BE ads |
+| `namabeauty.nl` | NL trust / iDEAL landing |
+| `nama.beauty` | Short if available |
+| `namenama.shop` | Weak — avoid |
+| `studio-nama.com` | Soft pivot if wordmark blocked |
+| `namalabs.shop` | Science angle |
+| `nama-ritual.com` | Ritual positioning |
+| `getnama.shop` | Ads tracker domain |
+| `namaofficial.eu` | EU cue |
+| `calmwithnama.com` | EN helper |
+
+Keep **namabeauty.shop** as canonical; 301 others.
+
+---
+
+## 12. Sources (selected)
+
+- Cosmetics Europe — EU beauty retail ~€110B (2025); skin care ~€32.3B  
+- Cosmetics Europe / national performance tables — NL ~€3.8B, BE/LU ~€2.5B, FR ~€14.5B (2025)  
+- adtribute Beauty benchmarks (2026) — CVR ~3.03%, AOV ~€68, Meta CPM elevated  
+- BTNG — EU health & beauty UX CVR 2–4%; returns often 5–15%  
+- RavenBI — collagen / ashwagandha EU Meta ad intensity; ashwagandha **no** EFSA claim  
+- Reg. (EC) 1924/2006 & Reg. 432/2012 — biotin hair/skin; magnesium tiredness & fatigue; vitamin C collagen formation  
+- Reg. (EC) 1223/2009 — cosmetics RP/CPNP  
+- BE FPS Public Health — FOODSUP fees €295 / €350  
+- Stripe docs — iDEAL/Bancontact `setup_future_usage` → SEPA DD; PaymentIntents off_session  
+- EUIPO public records — EUTM 019034393 “nama”; 017018953 “NAMA PERSONAL CARE”  
+- Your Europe — 14-day withdrawal; 2-year legal guarantee  
+
+---
+
+## 13. One-page next actions
+
+1. **Trademark lawyer** on Nama / Nama Beauty vs EUTM 019034393 & 017018953 (Class 3 + 5).  
+2. Lock supplier samples: 10% niacinamide serum + biotin gummies + Mg complex (EU docs).  
+3. File CPNP (serum) + FOODSUP (2 supplements) as soon as formulas/labels ready.  
+4. Build namabeauty.shop (NL) with drawer cart, Stripe, sheet webhook, real upsell TTL.  
+5. Film ingredient-education ads (not miracle cures).  
+6. Launch NL → BE → FR.
+
+**Nama Beauty** sells calm confidence: **skin tone, hair maintenance nutrients, evening tiredness** — three problems, one trustworthy prepaid brand.
